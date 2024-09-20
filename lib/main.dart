@@ -53,6 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TextField(
+                    key: const ValueKey("uri-input"),
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       label: Text("URI format"),
@@ -67,6 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   const Divider(),
                   TextField(
+                    key: const ValueKey("dotnet-input"),
                     decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       label: Text(".NET format"),
