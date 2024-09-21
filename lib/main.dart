@@ -1,6 +1,8 @@
 import 'package:connection_strings/converter.dart';
 import 'package:flutter/material.dart';
 
+import 'theme.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -8,21 +10,38 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  static final ValueNotifier<ThemeMode> themeNotifier =
+      ValueNotifier(ThemeMode.system);
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Connection Strings',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
-        useMaterial3: true,
-      ),
-      home: const MyHomePage(title: 'Connection Strings'),
+    return ValueListenableBuilder(
+      valueListenable: themeNotifier,
+      builder: (context, themeMode, child) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Connection Strings',
+          theme: lightTheme,
+          darkTheme: darkTheme,
+          themeMode: themeMode,
+          home: MyHomePage(
+            title: 'Connection Strings',
+            themeNotifier: themeNotifier,
+          ),
+        );
+      },
     );
   }
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+  final ValueNotifier<ThemeMode> themeNotifier;
+
+  const MyHomePage({
+    super.key,
+    required this.title,
+    required this.themeNotifier,
+  });
 
   final String title;
 
@@ -40,6 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        actions: [ThemeChanger(themeNotifier: widget.themeNotifier)],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
