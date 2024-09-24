@@ -33836,7 +33836,7 @@ l=A.b([new A.HV(l.c,n)],r)
 q=A.alo(o.d,B.Cw,B.QZ)
 p=o.c
 p.toString
-return new A.wp(new A.rP(s,l,m,new A.Mk(n,n,1/0,56),n),new A.dC(B.BO,A.Sp(A.b([B.PD,A.asF(A.Sp(A.b([q,A.hc("Format used by DataGrip, Aiven, ElephantSQL etc.",n,n,n,A.V(p).p2.Q,n,n),B.Bm,A.alo(o.e,B.Cx,B.QY),B.KD,new A.E3(o.gac2(),n,n,n,n,B.H,n,!1,n,!0,B.PG,n)],r),B.b1,B.qA,B.fl))],r),B.b1,B.bz,B.fl),n),n)},
+return new A.wp(new A.rP(s,l,m,new A.Mk(n,n,1/0,56),n),new A.dC(B.BO,A.Sp(A.b([B.PE,A.asF(A.Sp(A.b([q,A.hc("Format used by DataGrip, Aiven, ElephantSQL etc.",n,n,n,A.V(p).p2.Q,n,n),B.Bm,A.alo(o.e,B.Cx,B.QY),B.KD,new A.E3(o.gac2(),n,n,n,n,B.H,n,!1,n,!0,B.PG,n)],r),B.b1,B.qA,B.fl))],r),B.b1,B.bz,B.fl),n),n)},
 ac3(){var s,r,q=this.d.a.a
 if(q.length===0)return
 s=this.e
@@ -74076,8 +74076,8 @@ B.k8=new A.aW(B.o,1,B.v,-1)
 B.r3=new A.fY(4,B.dh,B.k8)
 B.Cw=new A.mr(null,null,B.PF,null,null,null,null,null,null,null,"postgres://user:pwd@hostname:5432/db?sslmode=require",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.r3,!0,null,null,null)
 B.Sw=new A.mr(null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,!0,null,null,null)
-B.PE=new A.jd(".NET format",null,null,null,null,null,null,null,null)
-B.Cx=new A.mr(null,null,B.PE,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.r3,!0,null,null,null)
+B.PD=new A.jd(".NET format",null,null,null,null,null,null,null,null)
+B.Cx=new A.mr(null,null,B.PD,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,B.r3,!0,null,null,null)
 B.Cz=new A.en(0.0825,0.2075,B.a6)
 B.ls=new A.en(0.5,1,B.be)
 B.CB=new A.en(0,0.1,B.a6)
@@ -75918,7 +75918,7 @@ B.OJ=new A.j(!0,B.F,null,"Roboto",B.K,null,null,null,null,null,null,null,null,nu
 B.O7=new A.j(!0,B.o,null,"Roboto",B.K,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelMedium",null,null,null,null)
 B.Oh=new A.j(!0,B.o,null,"Roboto",B.K,null,null,null,null,null,null,null,null,null,null,null,null,B.e,null,null,null,"blackHelsinki labelSmall",null,null,null,null)
 B.PC=new A.cU(B.P4,B.Md,B.Nc,B.O6,B.Oj,B.LE,B.MM,B.LI,B.NR,B.Ow,B.Nm,B.Oy,B.OJ,B.O7,B.Oh)
-B.PD=new A.jd("Convert connection strings to .NET format",null,null,null,null,null,null,null,null)
+B.PE=new A.jd("Convert Postgres connection strings to .NET format.",null,null,null,null,null,null,null,null)
 B.PG=new A.jd("Convert",null,null,null,null,null,null,null,null)
 B.Hc=new A.f(0.05,0)
 B.Hd=new A.f(0.133333,0.06)
