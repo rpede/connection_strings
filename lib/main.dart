@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             const Text(
-              'Convert connection strings to .NET format',
+              'Convert Postgres connection strings to .NET format.',
             ),
             Expanded(
               child: Column(
