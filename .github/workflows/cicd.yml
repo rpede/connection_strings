@@ -57,3 +57,23 @@ jobs:
           path: build/linux/x64/release/bundle/
           if-no-files-found: error
           overwrite: true
+
+  windows_job:
+    name: Windows release
+    runs-on: window-latest
+    needs: [test_job]
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - run: dart run msix:create
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: connectionstrings-windows
+          path: build/windows/x64/runner/Release/connection_strings.msix
+          if-no-files-found: error
+          overwrite: true
