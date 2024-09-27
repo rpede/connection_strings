@@ -60,7 +60,7 @@ jobs:
 
   windows_job:
     name: Windows release
-    runs-on: window-latest
+    runs-on: windows-latest
     needs: [test_job]
     steps:
       - name: Clone repository
